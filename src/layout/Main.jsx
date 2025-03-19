@@ -1,11 +1,14 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
         <div>
-            <h1>Welcome to The Smart Food Service System</h1>
-            <p>This is a website for managing and delivering food in a smart and efficient manner.</p>
-            <p>Please feel free to explore the website and let us know what you think.</p>
+            <h1 className=' text-5xl text-green-700'>Welcome to The Smart Food Service System</h1>
+            <Navbar />
+            <Outlet />
+            
         </div>
     );
 };
