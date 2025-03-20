@@ -1,14 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const Main = () => {
     return (
         <div>
-            <h1 className=' text-5xl text-green-700'>Welcome to The Smart Food Service System</h1>
             <Navbar />
-            <Outlet />
-            
+            <div className=" min-h-[calc(100vh-290px)] lg:mx-20 mx-5 mt-20">
+                <Outlet />
+            </div>
+            <Footer />
         </div>
     );
 };
