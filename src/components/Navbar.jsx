@@ -8,11 +8,11 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/aboutUs">About Us</NavLink>
+        <NavLink to="/About">About Us</NavLink>
       </li>
       
       <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/ContactUs">Contact</NavLink>
       </li>
       <li>
         <NavLink to="/login">Login</NavLink>
@@ -20,8 +20,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
+    <>
+      <div className="navbar fixed z-50 bg-opacity-30 mx-28 max-w-screen-xl bg-black text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -51,7 +51,7 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl">The Smart Food Service System</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu text-white menu-horizontal px-1">
             {
                 links
             }
@@ -61,7 +61,7 @@ const Navbar = () => {
           <a className="btn">Button</a>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

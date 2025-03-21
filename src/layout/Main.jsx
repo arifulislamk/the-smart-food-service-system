@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <div>
             <Navbar />
-            <div className=" min-h-[calc(100vh-290px)] lg:mx-20 mx-5 mt-0">
+            <div className="max-w-screen-xl mx-auto">
                 <Outlet />
             </div>
             <Footer />
