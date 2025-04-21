@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { LuEyeOff, LuEye } from "react-icons/lu";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation, Links } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 // import Swal from "sweetalert2";
@@ -97,9 +97,9 @@ const Login = () => {
     // }
 
     return (
-        <div className="mt-20 font-open-sans">
+        <div className="mt-14 font-open-sans">
             <Helmet>
-                <title>FOOD HUT | Login</title>
+                <title> | Login</title>
             </Helmet>
             <h2 className="font-poppins font-medium mb-4 text-center text-5xl">Please Login</h2>
             <form onSubmit={handleSubmit(handleLoginbtn)} className="card-body mb-6 border rounded-lg border-gray-400 lg:w-1/2 mx-auto">
@@ -122,7 +122,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="form-control lg:mt-6">
-                    <button className="btn bg-orange-400   text-2xl font-medium">Login</button>
+                    <Link to={"/"} className="btn bg-orange-400   text-2xl font-medium">Login</Link>
                 </div>
                 <div>
                     <p className="text-xl">Are You New? Please <Link className="text-blue-500 font-medium" to="/signUp">Register</Link></p>
